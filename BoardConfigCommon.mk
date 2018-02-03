@@ -201,6 +201,10 @@ TARGET_USERIMAGES_USE_F2FS := true
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 USE_OPENGL_RENDERER := true
 
+# Enable dex-preoptimization to speed up first boot sequence
+WITH_DEXPREOPT := true
+DONT_DEXPREOPT_PREBUILTS := true
+
 # RIL
 PROTOBUF_SUPPORTED := true
 TARGET_RIL_VARIANT := caf
