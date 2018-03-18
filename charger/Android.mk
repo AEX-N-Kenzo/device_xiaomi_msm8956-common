@@ -13,7 +13,8 @@ LOCAL_MODULE_PATH := $(TARGET_ROOT_OUT_SBIN)
 LOCAL_UNSTRIPPED_PATH := $(TARGET_ROOT_OUT_SBIN_UNSTRIPPED)
 
 # Symlink /charger to /sbin/charger_xiaomi
-LOCAL_POST_INSTALL_CMD := $(hide) mkdir -p $(TARGET_ROOT_OUT) \
-    && rm -f $(TARGET_ROOT_OUT)/charger && ln -sf /sbin/charger_xiaomi $(TARGET_ROOT_OUT)/charger
+LOCAL_POST_INSTALL_CMD := $(hide) mkdir -p $(TARGET_ROOT_OUT)
+LOCAL_POST_INSTALL_CMD += ; rm -f $(TARGET_ROOT_OUT)/charger
+LOCAL_POST_INSTALL_CMD += ; ln -sf /sbin/charger_xiaomi $(TARGET_ROOT_OUT)/charger
 
 include $(BUILD_PREBUILT)
