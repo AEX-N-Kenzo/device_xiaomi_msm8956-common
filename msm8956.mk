@@ -125,7 +125,8 @@ PRODUCT_PACKAGES += \
     copybit.msm8952 \
     gralloc.msm8952 \
     hwcomposer.msm8952 \
-    memtrack.msm8952
+    memtrack.msm8952 \
+    liboverlay
 
 # Doze mode
 PRODUCT_PACKAGES += \
