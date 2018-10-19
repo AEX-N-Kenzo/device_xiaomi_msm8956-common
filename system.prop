@@ -125,6 +125,8 @@ persist.radio.sib16_support=1
 persist.radio.sw_mbn_update=0
 persist.radio.VT_HYBRID_ENABLE=1
 
+# Enable Miracast
+persist.debug.wfd.enable=1
 
 # Storage
 ro.sys.sdcardfs=true
